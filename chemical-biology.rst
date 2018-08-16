@@ -181,7 +181,7 @@ BZD site on the GABAA receptor and potentiate the effect of endogenous GABA.
 	- Positive allosteric modulator
 	- Negative allosteric modulator
 	
-.. seealso:: Copied from: https://en.wikipedia.org/wiki/Receptor_(biochemistry)
+Source: https://en.wikipedia.org/wiki/Receptor_(biochemistry)
 
 When the binding type is set, we can also write a second statement with how 
 the binding affects the activity of the receptor.
@@ -190,7 +190,7 @@ Basmisanil (CHEMBL3681419) is an inverse agonist of the GABA receptor alpha-5
 subunit (UNIPROT:A8K338).
 
 .. code-block::
-	
+
 	SET Citation = {"Patent", "US-8846719-B2"}
 
 	SET AssayType = "B"
@@ -204,9 +204,8 @@ subunit (UNIPROT:A8K338).
 	
 	SET Species = "9606"
 	
-  # Basmisanil binds GABA receptor alpha-5
+ 	# Basmisanil binds GABA receptor alpha-5
 	a(CHEBML:CHEMBL3681419) => complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL3681419))
   
-  # Binding of basmisanil decreases the activity of the receptor
+  	# Binding of basmisanil decreases the activity of the receptor
 	complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL3681419)) =| act(p(UNIPROT:A8K338)) 
-

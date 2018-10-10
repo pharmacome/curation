@@ -7,4 +7,4 @@ install:
 - pip install doc8 restructuredtext_lint
 script:
 - doc8 *.rst
-- rstlint *.rst
+- rst-lint *.rst

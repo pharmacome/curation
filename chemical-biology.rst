@@ -23,7 +23,6 @@ Simple Representation
 
 Medium-Granular Representation with BEL Default Namespace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. code-block::
 
 	a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(cat))

@@ -7,7 +7,7 @@ based on topological novelty.
 -------------------------------------
 1. Assemble BEL from relevant sources
 2. Re-curate content with questionable quality following the
-   `Re-curation <https://github.com/pharmacome/curation/blob/master/recuration.rst>`_
+   `re-curation procedure <https://github.com/pharmacome/curation/blob/master/recuration.rst>`_
 3. *Optional*: choose annotations that are relevant and filter the resulting network.
    During the initial stages of the Human Brain Pharmacome project, we used the
    "Subgraph" annotation from NeuroMMSig to select our `ten highest priority candidate
@@ -42,4 +42,6 @@ Several steps can be taken to curate content after prioritizing genes.
 
 1. `Curation with INDRA <https://github.com/pharmacome/curation/blob/master/indra.rst>`_
 2. Manual search of literature for full-text. Eventually, storing the resulting PDFs in
-   services like Mendeley will result in good automatic recommendations.
+   services like Mendeley will result in good automatic recommendations. Curation and
+   `re-curation <https://github.com/pharmacome/curation/blob/master/recuration.rst>`_
+   can be done on prioritized papers.

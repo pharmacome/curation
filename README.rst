@@ -12,6 +12,7 @@ Procedures
 Topic-Specific Guidelines
 -------------------------
 - `Chemical Biology <https://github.com/pharmacome/curation/blob/master/chemical-biology.rst>`_
+- `Genetics <https://github.com/pharmacome/curation/blob/master/genetics.rst>`_
 
 .. |build| image:: https://travis-ci.com/pharmacome/curation.svg?branch=master
     :target: https://travis-ci.com/pharmacome/curation

@@ -54,3 +54,8 @@ If there are other BEL that can be extracted, make a new line with all of the sa
 If there are any annotations (cell type, species, cell line, tissue, experimental context, etc.) that are
 obvious from the evidence, then they can be denoted in the "Annotations" column using the BEL idiom of
 `SET ANNOTATION ...` statements.
+
+5. Re-Curation
+--------------
+Finally, the statements should be exported to BEL and checked using the
+`re-curation procedure <https://github.com/pharmacome/curation/blob/master/recuration.rst>`_.

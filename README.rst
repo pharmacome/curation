@@ -6,6 +6,7 @@ Human Brain Pharmacome project.
 Procedural
 ----------
 - `Re-curation <https://github.com/pharmacome/curation/blob/master/recuration.rst>`_
+- `Curation with INDRA <https://github.com/pharmacome/curation/blob/master/indra.rst>`_
 
 Topic-Specific
 --------------

@@ -1,0 +1,10 @@
+sudo: false
+cache: pip
+language: python
+python:
+- 3.6
+install:
+- pip install doc8 restructuredtext_lint
+script:
+- doc8 *.rst
+- rstlint *.rst

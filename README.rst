@@ -12,6 +12,7 @@ Procedures
 Technologies
 ------------
 - `Curation using Git as a version control system <https://github.com/pharmacome/curation/blob/master/using-git.rst>`_
+- `Feedback using PyBEL and continuous integration <https://github.com/cthoyt/pybel-git>`_
 
 Topic-Specific Guidelines
 -------------------------

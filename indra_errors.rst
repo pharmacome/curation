@@ -7,7 +7,7 @@ extracted from INDRA.
 Gene-centric
 ~~~~~~~~~~~~
 
-- **Knock Down**.
+- **Knock Down**. A knock down of the gene is not labelled as such.
 
 - **Gene skipping**.
 
@@ -38,14 +38,21 @@ Negation
 Subject/object
 ~~~~~~~~~~~~~~
 
+If the subject or the object are in the evidence but don’t have a relationship
 
 Not Evidence
 ~~~~~~~~~~~~
+
+If the evidence chosen cannot\should not be coded in BEL. Also if it’s incomplete or unclear
 
 
 Site of Modification
 ~~~~~~~~~~~~~~~~~~~~
 
+If the specific site of protein modification (amino acid residue) is not correct 
+
 
 Physical Contact Missing
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+If the evidence does not describe a direct increase/decrease

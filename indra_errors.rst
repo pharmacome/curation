@@ -7,18 +7,33 @@ extracted from INDRA.
 Gene-centric
 ~~~~~~~~~~~~
 
+- **Knock Down**.
+
+- **Gene skipping**.
+
+- **Promoter activity**.
 
 Relationship
 ~~~~~~~~~~~~
 
+- **Target**. 
+
+- **Modulate**.
+
+- **Mediates**.
 
 Identification
 ~~~~~~~~~~~~~~
 
+The Named-entity recognition system labels an entity wrong. For example, confusing an abbreviation
+with a different meaning (e.g., FIP means USF2 but is also a recombinant protein (FasL Interfering Protein))
 
 Negation
 ~~~~~~~~
 
+- **But not**.
+
+- **Negative mediator**.
 
 Subject/object
 ~~~~~~~~~~~~~~

@@ -7,7 +7,8 @@ Procedures
 ----------
 - `Re-curation <https://github.com/pharmacome/curation/blob/master/recuration.rst>`_
 - `Curation with INDRA <https://github.com/pharmacome/curation/blob/master/indra.rst>`_
-- `Rational Enrichment <https://github.com/pharmacome/curation/blob/master/rational-enrichment.rst>`_
+- `Error assessment for INDRA <https://github.com/pharmacome/curation/blob/master/indra-errors.rst>`_
+- `Rational enrichment <https://github.com/pharmacome/curation/blob/master/rational-enrichment.rst>`_
 
 Technologies
 ------------
@@ -16,7 +17,7 @@ Technologies
 
 Topic-Specific Guidelines
 -------------------------
-- `Chemical Biology <https://github.com/pharmacome/curation/blob/master/chemical-biology.rst>`_
+- `Chemical biology <https://github.com/pharmacome/curation/blob/master/chemical-biology.rst>`_
 - `Genetics <https://github.com/pharmacome/curation/blob/master/genetics.rst>`_
 
 .. |build| image:: https://travis-ci.com/pharmacome/curation.svg?branch=master

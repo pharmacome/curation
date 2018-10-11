@@ -47,6 +47,7 @@ Each statement should be read and assessed by the curator, then an "x" should be
 - Otherwise, the statement should be fixed (assignment of entity types, relation, etc.) and an "x" should be placed
   in the "Changed" column.
 - If the statement is total nonsense, then no checks should be placed in either the "Correct" or "Changed" columns.
+  See the guidelines for curating information about errors on https://github.com/pharmacome/curation/blob/master/indra-errors.rst
 
 If there are other BEL that can be extracted, make a new line with all of the same provenance information
 (uuid, reference, evidence, etc.) and just place an "x" in the "Changed" column.

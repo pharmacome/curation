@@ -9,6 +9,10 @@ Procedures
 - `Curation with INDRA <https://github.com/pharmacome/curation/blob/master/indra.rst>`_
 - `Rational Enrichment <https://github.com/pharmacome/curation/blob/master/rational-enrichment.rst>`_
 
+Technologies
+------------
+- `Curation using Git as a version control system <https://github.com/pharmacome/curation/blob/master/using-git.rst>`_
+
 Topic-Specific Guidelines
 -------------------------
 - `Chemical Biology <https://github.com/pharmacome/curation/blob/master/chemical-biology.rst>`_

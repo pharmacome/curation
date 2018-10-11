@@ -19,13 +19,13 @@ Simple Representation
 ~~~~~~~~~~~~~~~~~~~~~
 .. code-block::
 
-	a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035))
+    a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035))
 
 Medium-Granular Representation with BEL Default Namespace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block::
 
-	a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(cat))
+    a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(cat))
 
 Specific Representation
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,7 +34,7 @@ is its (hydroxymethylglutaryl-CoA reductase (NADPH) activity (GO:0004420).
 
 .. code-block::
 
-	a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(GO:0004420))
+    a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(GO:0004420))
 
 In general, it might not be so obvious how specific of a GO term to
 choose. Additionally, a protein may have multiple functions. Complementary
@@ -77,16 +77,16 @@ After adding this metadata, we get:
 
 .. code-block::
 
-	SET AssayType = "B"
-	SET MeasurementType = "IC50"
-	SET MeasurementUnits = "nM"
-	SET MeasurementRelation = "="
-	SET MeasurementValue = "0.5"
+    SET AssayType = "B"
+    SET MeasurementType = "IC50"
+    SET MeasurementUnits = "nM"
+    SET MeasurementRelation = "="
+    SET MeasurementValue = "0.5"
 
-	SET Species = "9606"
-	SET Cell = "HEPG2"
+    SET Species = "9606"
+    SET Cell = "HEPG2"
 
-	a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(GO:0004420))
+    a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(GO:0004420))
 
 Provenance
 ~~~~~~~~~~
@@ -105,20 +105,20 @@ Finally, with both the assay metadata and provenance, we get:
 
 .. code-block::
 
-	SET Citation = {"PubMed", "2153213"}
-	SET Evidence = "Retrieved from ChEMBL"
-	SET Database = "chembl"
+    SET Citation = {"PubMed", "2153213"}
+    SET Evidence = "Retrieved from ChEMBL"
+    SET Database = "chembl"
 
-	SET AssayType = "B"
-	SET MeasurementType = "IC50"
-	SET MeasurementUnits = "nM"
-	SET MeasurementRelation = "="
-	SET MeasurementValue = "0.5"
+    SET AssayType = "B"
+    SET MeasurementType = "IC50"
+    SET MeasurementUnits = "nM"
+    SET MeasurementRelation = "="
+    SET MeasurementValue = "0.5"
 
-	SET Species = "9606"
-	SET Cell = "HEPG2"
+    SET Species = "9606"
+    SET Cell = "HEPG2"
 
-	a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(GO:0004420))
+    a(CHEMBL:CHEMBL1487) =| act(p(UNIPROT:P04035), ma(GO:0004420))
 
 Receptor Binding
 ----------------
@@ -131,28 +131,28 @@ Ki.
 
 .. code-block::
 
-	SET AssayType = "B"
-	SET MeasurementType = "Ki"
-	SET MeasurementUnits = "nM"
-	SET MeasurementRelation = ">"
-	SET MeasurementValue = "15000"
+    SET AssayType = "B"
+    SET MeasurementType = "Ki"
+    SET MeasurementUnits = "nM"
+    SET MeasurementRelation = ">"
+    SET MeasurementValue = "15000"
 
-	SET Species = "9606"
+    SET Species = "9606"
 
-	a(CHEMBL:CHEMBL911) => complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL911))
+    a(CHEMBL:CHEMBL911) => complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL911))
 
 Zolipidem is not a very strong binder to the GABA receptor alpha-5 subunit,
 so it is unlikely we'll find an annotation as to its binding type.
 
 Binding Type
 ~~~~~~~~~~~~
-- *Full agonist*s are able to activate the receptor and result in a strong
+- *Full agonists* are able to activate the receptor and result in a strong
   biological response. The natural endogenous ligand with the greatest
   efficacy for a given receptor is by definition a full agonist (100% efficacy).
-- *Partial agonist*s do not activate receptors with maximal efficacy, even
+- *Partial agonists* do not activate receptors with maximal efficacy, even
   with maximal binding, causing partial responses compared to those of full
   agonists (efficacy between 0 and 100%).
-- *Antagonist*s bind to receptors but do not activate them. This results
+- *Antagonists* bind to receptors but do not activate them. This results
   in a receptor blockade, inhibiting the binding of agonists and inverse
   agonists. Receptor antagonists can be competitive (or reversible), and
   compete with the agonist for the receptor, or they can be irreversible
@@ -161,12 +161,14 @@ Binding Type
   proton pump inhibitor omeprazole is an example of an irreversible
   antagonist. The effects of irreversible antagonism can only be reversed
   by synthesis of new receptors.
-- *Inverse agonist*s reduce the activity of receptors by inhibiting their
+- *Inverse agonists* reduce the activity of receptors by inhibiting their
   constitutive activity (negative efficacy).
 
-.. todo:: add full agonist example
-.. todo:: add partial agonist example
-.. todo:: add antagonist example
+To Do:
+
+- add full agonist example
+- add partial agonist example
+- add antagonist example
 
 Allostery
 ~~~~~~~~~
@@ -177,8 +179,8 @@ but instead on specific allosteric binding sites, through which they modify
 the effect of the agonist. For example, benzodiazepines (BZDs) bind to the
 BZD site on the GABAA receptor and potentiate the effect of endogenous GABA.
 
-	- Positive allosteric modulator
-	- Negative allosteric modulator
+    - Positive allosteric modulator
+    - Negative allosteric modulator
 
 Source: https://en.wikipedia.org/wiki/Receptor_(biochemistry)
 
@@ -190,21 +192,21 @@ subunit (UNIPROT:A8K338).
 
 .. code-block::
 
-	SET Citation = {"Patent", "US-8846719-B2"}
+    SET Citation = {"Patent", "US-8846719-B2"}
 
-	SET AssayType = "B"
-	SET MeasurementType = "Ki"
-	SET MeasurementUnits = "nM"
-	SET MeasurementRelation = "="
-	SET MeasurementValue = "445.47"
+    SET AssayType = "B"
+    SET MeasurementType = "Ki"
+    SET MeasurementUnits = "nM"
+    SET MeasurementRelation = "="
+    SET MeasurementValue = "445.47"
 
-	SET BindingType = "Inverse agonist"
-	SET Allostery = "Negative"
+    SET BindingType = "Inverse agonist"
+    SET Allostery = "Negative"
 
-	SET Species = "9606"
+    SET Species = "9606"
 
- 	# Basmisanil binds GABA receptor alpha-5
-	a(CHEBML:CHEMBL3681419) => complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL3681419))
+     # Basmisanil binds GABA receptor alpha-5
+    a(CHEBML:CHEMBL3681419) => complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL3681419))
 
-  	# Binding of basmisanil decreases the activity of the receptor
-	complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL3681419)) =| act(p(UNIPROT:A8K338))
+      # Binding of basmisanil decreases the activity of the receptor
+    complex(p(UNIPROT:A8K338), a(CHEMBL:CHEMBL3681419)) =| act(p(UNIPROT:A8K338))

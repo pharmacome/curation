@@ -33,19 +33,19 @@ with a different meaning (e.g., FIP means USF2 but is also a recombinant protein
 Negation
 ~~~~~~~~
 
-- **But not**.
+- **But not**. False positive negation.
 
 - **Negative mediator**.
 
 Subject/object
 ~~~~~~~~~~~~~~
 
-If the subject or the object are in the evidence but don’t have a relationship
+Subject and object are correctly labelled but there is not relationship between them.
 
 Not Evidence
 ~~~~~~~~~~~~
 
-If the evidence chosen cannot\should not be coded in BEL. Also if it’s incomplete or unclear
+The evidence information is not sufficient to code the BEL statement.
 
 Site of Modification
 ~~~~~~~~~~~~~~~~~~~~

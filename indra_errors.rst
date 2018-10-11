@@ -9,18 +9,20 @@ Gene-centric
 
 - **Knock Down**. A knock down of the gene is not labelled as such.
 
-- **Gene skipping**.
+- **Gene skipping**. Exon/intron regulation is not labelled as such.
 
-- **Promoter activity**.
+- **Promoter activity**. Missing promotor activity labels.
 
 Relationship
 ~~~~~~~~~~~~
 
-- **Target**. 
+- **Target**. Labelled as target but not clear from the evidence. 
 
-- **Modulate**.
+- **Modulate**. Labelled as modulation but not clear from the evidence. 
 
-- **Mediates**.
+- **Regulate**. Labelled as regulation but not clear from the evidence.  
+
+- **Mediate**. Labelled as mediation but not clear from the evidence. 
 
 Identification
 ~~~~~~~~~~~~~~
@@ -45,14 +47,12 @@ Not Evidence
 
 If the evidence chosen cannot\should not be coded in BEL. Also if it’s incomplete or unclear
 
-
 Site of Modification
 ~~~~~~~~~~~~~~~~~~~~
 
-If the specific site of protein modification (amino acid residue) is not correct 
-
+The entity was labelled with the wrong modification site.
 
 Physical Contact Missing
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-If the evidence does not describe a direct increase/decrease
+The relationship was labelled as directed but the evidence does not show that.

@@ -66,6 +66,7 @@ and the `pmod()` function:
 
 .. code-block::
 
+	# Wrong
 	p(HGNC:MAPT,pmod(Ph))
 
 The same, with proper spacing applied:
@@ -81,12 +82,14 @@ correct, but the contents of the `pmod()` are not:
 
 .. code-block::
 
+	# Wrong
 	p(HGNC:MAPT, pmod(Ph,Y,18))
 
 The same, with proper spacing applied:
 
 .. code-block::
 
+	# Correct
 	p(HGNC:MAPT, pmod(Ph, Y, 18))
 
 Spacing in Annotations
@@ -97,12 +100,14 @@ equals sign and the value:
 
 .. code-block::
 
+	# Wrong
 	SET Disease="Alzheimer disease"
 
 The same, with proper spacing applied:
 
 .. code-block::
 
+	# Correct
 	SET Disease = "Alzheimer disease"
 
 The following multiple annotation is is difficult to read, because there
@@ -111,10 +116,29 @@ open bracket, and 3) the entries within the brackets.
 
 .. code-block::
 
+	# Wrong
 	SET Citation={"PubMed","12345"}
 
 The same, with proper spacing applied:
 
 .. code-block::
 
+	# Correct
 	SET Citation = {"PubMed", "12345"}
+
+Citation Information
+********************
+Citations should be written succinctly when referring to databases like PubMed, PubMed Central and DOI. The remaining
+citation information can be looked up programatically after.
+
+.. code-block::
+
+	# Wrong
+	SET Citation = {"PubMed", "Nat Rev Drug Discov. 2018 Sep;17(9):660-688. doi: 10.1038/nrd.2018.109. Epub 2018 Aug 17.", "30116051"}
+
+The same, with proper terseness:
+
+.. code-block::
+
+	# Correct
+	SET Citation = {"PubMed", "30116051"}

@@ -9,6 +9,7 @@ Procedures
 - `Curation with INDRA <https://github.com/pharmacome/curation/blob/master/indra.rst>`_
 - `Error assessment for INDRA <https://github.com/pharmacome/curation/blob/master/indra-errors.rst>`_
 - `Rational enrichment <https://github.com/pharmacome/curation/blob/master/rational-enrichment.rst>`_
+- `BEL style guide <https://github.com/pharmacome/curation/blob/master/bep8.rst>`_
 
 Technologies
 ------------

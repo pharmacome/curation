@@ -50,13 +50,27 @@ Authors should be set comma-separated in alphabetical order by last name using
 In the description, the contributions of each author can be listed. Some suggested
 roles are "curation", "supervision", "quality control".
 
+Contact Info
+************
+Consider that the authors of a BEL document and the responsible person for the
+integrity and correctness of the document might not be the same person. For example,
+this could be due to people moving to new projects. Only the person responsible
+for a given BEL document should list their contact information in the
+``SET DOCUMENT ContactInfo`` field.
+
 Organization of Terminologies
 -----------------------------
+The term "terminologies" is used to refer to both BEL namespaces and BEL annotations
+in this section.
+
+Terminologies' keywords should use an uppercased version of their corresponding
+entry in Identifiers.org, when possible. Dots and dashes in resource names are
+removed for BEL, since they are not consider valid characters for use in keywords.
+Example: ``ec-code`` becomes ``ECCODE``.
+
 Namespaces should be listed first (interspersed URL and PATTERN definitions), then
 annotations (interspersed URL and PATTERN definitions), then annotations defined by
-lists.
-
-Within each group, all terminologies should be listed in alphabetical order by
+lists. Within each group, all terminologies should be listed in alphabetical order by
 the keyword used.
 
 Terminologies with multiple parts, like MeSH and GO, should **NOT** be split into
@@ -69,6 +83,7 @@ and versioned using the git commit hashes. The following namespaces are already 
    DEFINE NAMESPACE CHEBI    AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
    DEFINE NAMESPACE DRUGBANK AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns"
    DEFINE NAMESPACE ECCODE   AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns"
+   DEFINE NAMESPACE FPLX     AS URL "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns"
    DEFINE NAMESPACE GFAM     AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc.genefamily-names.belns"
    DEFINE NAMESPACE GO       AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns"
    DEFINE NAMESPACE HGNC     AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns"
@@ -76,18 +91,31 @@ and versioned using the git commit hashes. The following namespaces are already 
    DEFINE NAMESPACE MIRBASE  AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns"
    DEFINE NAMESPACE NCBIGENE AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns"
 
+Note, while ``GFAM`` is used for ``hgnc.genefamily`` for brevity, this isn't *really* recommended.
+
 Usage of Short vs. Long Form
 ----------------------------
-All BEL functions (e.g., `proteinAbundance()`, `abundance()`, `pathology()`, etc.)
-should be abbreviated to the short forms (e.g, `p()`, `a()`, `path()`, etc.).
+All BEL functions (e.g., ``proteinAbundance()``, ``abundance()``, ``pathology()``, etc.)
+should be abbreviated to the short forms (e.g, ``p()``, ``a()``, ``path()``, etc.).
 
-All BEL transformations (i.e., `activity()`, `translocation()`, and `reaction()`),
-as well as their specific arguments (i.e. `molecularActivity()`, `fromLocation()`, etc.)
-should be abbreviated to the short forms (i.e. `act()`, `tloc()`, and `rxn()`).
+All BEL transformations (i.e., ``activity()``, ``translocation()``, and ``reaction()``),
+as well as their specific arguments (i.e. ``molecularActivity()``, ``fromLocation()``, etc.)
+should be abbreviated to the short forms (i.e. ``act()``, ``tloc()``, and ``rxn()``).
 
 All BEL relationships should be abbreviated with their short forms.
 
 BEL is quite verbose - the theme is to always abbreviate when possible.
+
+Usage of ``SET STATEMENT_GROUP``
+--------------------------------
+``STATEMENT_GROUP`` is listed in the BEL specification as a privileged annotation - it does not need to
+be defined, and it can be set to anything without semantic validation.
+
+Because it neither has inherent meaning, nor community practices ascribed to it, it is explicitly discouraged
+to use this annotation.
+
+Some curators use the ``STATEMENT_GROUP`` to give information about who the curator was, or a certain "sprint"
+of curation, but these should already be addressed by the earlier point on the organization of BEL documents.
 
 Proper Spacing
 --------------
@@ -99,7 +127,7 @@ Spacing in BEL Terms
 ********************
 The following protein with a post-translational modification is difficult
 to read because there is no space between the comma following the identifier
-and the `pmod()` function:
+and the ``pmod()`` function:
 
 .. code-block::
 
@@ -112,10 +140,10 @@ The same, with proper spacing applied:
 
     p(HGNC:MAPT, pmod(Ph))
 
-The same applies for all other variants (`sub()`, `frag()`, `loc()`, etc.)
+The same applies for all other variants (``sub()``, ``frag()``, ``loc()``, etc.)
 and other functions in which commas are applied. The following is another
 example in which the spacing between the comma following the identifier is
-correct, but the contents of the `pmod()` are not:
+correct, but the contents of the ``pmod()`` are not:
 
 .. code-block::
 

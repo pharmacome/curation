@@ -1,9 +1,9 @@
 Encoding of Genetic Information
 ===============================
-PyBEL (and the BEL 2.1 update; see `PR#13 <https://github.com/belbio/bep/pull/13>`_)
-introduces a proper syntax for representing epigenetic modifications, such as
-methylation. The syntax follows the same style as the protein modification syntax,
-and can follow the identifier for a gene.
+`BEP6 <https://github.com/belbio/bep/pull/13>`_ introduces a proper syntax for representing
+epigenetic modifications, such as methylation for BEL 2.0.0+. The syntax follows the same style
+as the protein modification syntax, and can follow the identifier for a gene. A reference
+implementation has been included in PyBEL.
 
 Epigenetics
 -----------
@@ -67,7 +67,9 @@ and includes a regular expression that all accession numbers follow. This can be
 
     DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
 
-The following is an example from https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=1235:
+The following is an example from https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=1235 that
+uses the ``equivalentTo`` relationship proposed by `BEP4 <https://github.com/belbio/bep/pull/11>`_
+for BEL 2.0.0+ to link a dbSNP entry to the HGVS nomenclature applied to a gene.
 
 .. code-block::
 
@@ -78,11 +80,8 @@ The following is an example from https://www.ncbi.nlm.nih.gov/projects/SNP/snp_r
 
     g(HGNC:MDGA2, var("c.*1638C>A")) equivalentTo g(DBSNP:rs1235)
 
-Additionally, the relationship, ``equivalentTo``, has been added in the PyBEL
-variant of the BEL specification to explicitly specify equivalent nodes.
-
-``g(HGNC:MDGA2) hasVariant g(dbSNP:rs1235)`` is automatically added by the
-compiler.
+A reference implementation is provided by PyBEL, in which the hasVariant relationship
+``g(HGNC:MDGA2) hasVariant g(dbSNP:rs1235)`` is automatically added by the compiler.
 
 An example from a genome-wide association study:
 

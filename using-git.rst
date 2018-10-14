@@ -26,10 +26,10 @@ Commit early and often. Each commit should describe what's being worked on, and 
 best community practices for writing the commit. See: https://chris.beams.io/posts/git-commit/.
 In the future, pre-commit hooks could be used to enforce this policy.
 
-Between commits, using PyBEL locally to compile the BEL document and find errors is helpful
-as opposed to waiting until it is finished. Other solutions using continuous integration
-to take the hassle out of installing and running PyBEL are also publicly available. See:
-https://github.com/cthoyt/pybel-git
+Between commits, locally compiling the BEL document with a compiler like `PyBEL <https://github.com/pybel/pybel>`_
+to find errors is helpful as opposed to waiting until the whole curation task is finished. Other solutions using
+continuous integration to take the hassle out of installing and running a BEL compiler are also publicly available.
+For example, see: https://github.com/cthoyt/pybel-git.
 
 3. Merge
 --------

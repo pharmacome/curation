@@ -17,14 +17,13 @@ by multiple users.
 2. Fetch and pull from the origin
 3. Make a new branch with a descriptive (but succinct) name of what you'll be working on.
    If this branch corresponds to adding a new article, title the branch with the author's
-   last name and publication year prepended with ``curation-``. Example:
+   last name and publication year prefixed with ``curation-``. Example:
    ``curation-olsen2016``
 
 2. Commits with Incremental Progress
 ------------------------------------
 Commit early and often. Each commit should describe what's being worked on, and follow
-best community practices for writing the commit. See: https://chris.beams.io/posts/git-commit/
-
+best community practices for writing the commit. See: https://chris.beams.io/posts/git-commit/.
 In the future, pre-commit hooks could be used to enforce this policy.
 
 Between commits, using PyBEL locally to compile the BEL document and find errors is helpful
@@ -34,9 +33,11 @@ https://github.com/cthoyt/pybel-git
 
 3. Merge
 --------
-If curation is being done on GitHub, make a "pull request." On GitLab, make a "merge request."
-This is a place where the final results can be checked one more time for syntactic/semantic
-correctness with PyBEL, and discussion between curators and managers can occur.
+If curation is being done on GitHub, make a `pull request
+<https://help.github.com/articles/creating-a-pull-request/>`_. On GitLab, make a `merge request
+<https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html>`_. This is a place where the
+final results can be checked one more time for syntactic/semantic correctness with PyBEL, and
+discussion between curators and managers can occur.
 
 Each merge/pull request needs a name suitable for the public commit log, since the multiple
 commits will be combine (through a process known as squashing) before merging onto the master

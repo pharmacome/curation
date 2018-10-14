@@ -19,13 +19,13 @@ Gene-centric
 
 Relationship
 ~~~~~~~~~~~~
-- **Target**. Labelled as target but not clear from the evidence. 
+- **Target**. Labelled as target but not clear from the evidence.
 
-- **Modulate**. Labelled as modulation but not clear from the evidence. 
+- **Modulate**. Labelled as modulation but not clear from the evidence.
 
-- **Regulate**. Labelled as regulation but not clear from the evidence.  
+- **Regulate**. Labelled as regulation but not clear from the evidence.
 
-- **Mediate**. Labelled as mediation but not clear from the evidence. 
+- **Mediate**. Labelled as mediation but not clear from the evidence.
 
 Identification
 ~~~~~~~~~~~~~~

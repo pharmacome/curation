@@ -1,5 +1,5 @@
-Recuration Guidelines
-=====================
+Re-curation Guidelines
+======================
 These guidelines were originally written for the re-curation of several
 NeuroMMSig subgraphs in the Alzheimer's Disease Knowledge Assembly during
 the Human Brain Pharmacome project, but may be generally applicable to
@@ -10,7 +10,7 @@ Normalizing Entities
 Chemicals
 ~~~~~~~~~
 1. Normalize chemical entities to preferred namespaces (*ChEBI*, *ChEBML*,
-   *PubChem*) whenever posssible. *MeSH* is explicitly discoraged becuase it is
+   *PubChem*) whenever possible. *MeSH* is explicitly discouraged because it is
    difficult to look up their structures as SMILES or InChI, even with
    resolving services like UniChem
 2. Formalize knowledge about chemicals that have not yet been encoded in
@@ -32,8 +32,9 @@ PFAM and InterPro).
 Other Entities
 ~~~~~~~~~~~~~~
 We are also building a terminology at https://github.com/pharmacome/terminology.
-This should not be done lightly, so see https://github.com/pharmacome/terminology#contributing
-for contribution guidelines and rules.
+This should not be done lightly, so see
+its `contribution guidelines and rules <https://github.com/pharmacome/terminology#contributing>`_
+before making a pull request.
 
 Checking Correctness
 --------------------

@@ -91,7 +91,7 @@ After adding this metadata, we get:
 Provenance
 ~~~~~~~~~~
 Using a valid citation that points to the original source of the information
-is preferred to using a refernce to the database from which the relation
+is preferred to using a reference to the database from which the relation
 comes. Example: it's better to use `PMID:2153213 <https://www.ncbi.nlm.nih.gov/pubmed/2153213>`_
 in these examples referring to its original publication rather than citing ChEMBL.
 

@@ -1,9 +1,9 @@
 Encoding of Genetic Information
 ===============================
-PyBEL (and the BEL 2.1 update) introduces a proper syntax for representing
-epigenetic modifications, such as methylation. The syntax follows the same
-style as the protein modification syntax, and can follow the identifier for a
-gene.
+PyBEL (and the BEL 2.1 update; see `PR#13 <https://github.com/belbio/bep/pull/13>`_)
+introduces a proper syntax for representing epigenetic modifications, such as
+methylation. The syntax follows the same style as the protein modification syntax,
+and can follow the identifier for a gene.
 
 Epigenetics
 -----------
@@ -31,6 +31,7 @@ Single Nucleotide Polymorphisms (SNPs)
 In general, a single nucleotide polymorphism (SNP) refers to a variant in a
 genetic sequence. The *de facto* identifiers for these variations are the RS
 numbers from dbSNP. A given identifier can point to two types of information:
+intrageneic SNPs and intergenic SNPs.
 
 Intragenic SNPs
 ~~~~~~~~~~~~~~~
@@ -56,7 +57,17 @@ explicit. These statements can be grouped together in a citation to dbSNP, the
 evidence can be dummy text, and the confidence level can be set with
 ``SET Confidence = "Axiomatic"``.
 
-Example from https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=1235:
+First, dbSNP can be included using a regular expression definition of a namespace,
+since there are potentially billions of enumerated SNPs. This is a BEL 2.0.0+ feature
+that was proposed in `BEP5 <https://github.com/belbio/bep/pull/12>`_. Identifiers.org
+lists the database information at https://www.ebi.ac.uk/miriam/main/datatypes/MIR:00000161,
+and includes a regular expression that all accession numbers follow. This can be included as
+
+.. code-block::
+
+    DEFINE NAMESPACE DBSNP AS PATTERN "^rs\d+$"
+
+The following is an example from https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=1235:
 
 .. code-block::
 
@@ -65,7 +76,7 @@ Example from https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=1235:
 
     SET Confidence = "Axiomatic"
 
-    g(HGNC:MDGA2, var(c.*1638C>A)) equivalentTo g(dbSNP:rs1235)
+    g(HGNC:MDGA2, var("c.*1638C>A")) equivalentTo g(DBSNP:rs1235)
 
 Additionally, the relationship, ``equivalentTo``, has been added in the PyBEL
 variant of the BEL specification to explicitly specify equivalent nodes.
@@ -84,8 +95,8 @@ An example from a genome-wide association study:
      analysis showed the CLU "GCG" haplotype was a risk haplotype. Our findings indicate the rs9331888 SNP of CLU is
      associated with LOAD independent of APOE."
 
-    g(HGNC:CLU) hasVariant g(SNP:rs9331888)
-    g(SNP:rs9331888) -- path(MESH:"Alzheimer Disease")
+    g(HGNC:CLU) hasVariant g(DBSNP:rs9331888)
+    g(DBSNP:rs9331888) -- path(MESH:"Alzheimer Disease")
 
 Intergenic SNPs
 ~~~~~~~~~~~~~~~
@@ -100,7 +111,14 @@ etc.
 
 LD-Block Information
 ~~~~~~~~~~~~~~~~~~~~
-LD-Block analysis find SNPs that co-occur together. These relationships can
-be inferred from data-driven approaches.
+Linkage disequilibrium (LD) block analysis find SNPs that co-occur together. These
+relationships can be inferred from data-driven approaches.
 
-TODO!
+*TODO*
+
+eQTL Information
+~~~~~~~~~~~~~~~~
+Expression quantitative trait loci (eQTLs) connect variants to gene expression
+patterns.
+
+*TODO*

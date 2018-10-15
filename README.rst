@@ -1,5 +1,5 @@
-BEL Curation Procedures and Guidelines|build|
-=============================================
+BEL Curation Procedures and Guidelines |build|
+==============================================
 This folder contains the BEL curation procedures and guidelines developed and
 used during the `Human Brain Pharmacome <https://pharmacome.scai.fraunhoer.de>`_
 project.

@@ -42,3 +42,9 @@ discussion between curators and managers can occur.
 Each merge/pull request needs a name suitable for the public commit log, since the multiple
 commits will be combine (through a process known as squashing) before merging onto the master
 branch.
+
+4. Continuous Integration
+-------------------------
+See "`Feedback using PyBEL and Continuous Integration <https://github.com/cthoyt/pybel-git>`_"
+for more information on using GitHub + Travis CI or GitLab + Jenkins to trigger automatic
+runs of code quality assessment.

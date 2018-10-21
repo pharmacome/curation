@@ -10,6 +10,7 @@ project.
 General BEL Coding
 ------------------
 - `BEL Style Guide <https://github.com/pharmacome/curation/blob/master/style-guide.rst>`_
+- `BEL Template <https://github.com/pharmacome/curation/blob/master/template.bel>`_
 - `Cookbook <https://github.com/pharmacome/curation/blob/master/cookbook.rst>`_
 
 Topic-Specific Guidelines

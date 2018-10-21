@@ -35,10 +35,3 @@ project.
    :caption: Technologies
 
    using-git
-
-
-Indices and tables
-==================
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

@@ -14,11 +14,6 @@ SET DOCUMENT Description = ""
 # Namespaces #
 ##############
 
-# Namespaces defined with regular expressions
-# -------------------------------------------
-DEFINE NAMESPACE DNSNP          AS PATTERN "rs[0-9]+"
-DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
-
 # Namespaces hosted on https://github.com/pharmacome/terminology
 # --------------------------------------------------------------
 DEFINE NAMESPACE CHEBI          AS URL "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns"
@@ -48,6 +43,11 @@ DEFINE NAMESPACE DO             AS URL "https://arty.scai.fraunhofer.de/artifact
 DEFINE NAMESPACE HP             AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns"
 DEFINE NAMESPACE SCOMP          AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns"
 DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+
+# Namespaces defined with regular expressions
+# -------------------------------------------
+DEFINE NAMESPACE DNSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
 
 ###############
 # Annotations #

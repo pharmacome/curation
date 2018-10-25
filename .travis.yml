@@ -7,4 +7,4 @@ install:
 - pip install doc8 restructuredtext_lint
 script:
 - doc8 --max-line-length 120 *.rst
-- rst-lint *.rst
+- rst-lint *[^index].rst

@@ -46,7 +46,7 @@ DEFINE NAMESPACE SFAM           AS URL "https://arty.scai.fraunhofer.de/artifact
 
 # Namespaces defined with regular expressions
 # -------------------------------------------
-DEFINE NAMESPACE DNSNP          AS PATTERN "rs[0-9]+"
+DEFINE NAMESPACE DBSNP          AS PATTERN "rs[0-9]+"
 DEFINE NAMESPACE TAXONOMY       AS PATTERN "^\d+$"
 
 ###############

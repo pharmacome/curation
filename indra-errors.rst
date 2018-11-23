@@ -6,7 +6,8 @@ extracted from INDRA.
 When they're encountered:
 
 1. Add a column with the label ‘Error Type’ to your document
-2. Whenever you find a type of error mentioned in the table, please put the type of error in the column
+2. Whenever you find a type of error mentioned in the table, please put the type of error in the column. If there a
+   are multiple errors, separate them with a comma.
 3. If the error does not correspond to any of those categories, add a new error type to this table and give an example
 
 Gene-centric

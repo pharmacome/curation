@@ -59,7 +59,7 @@ Not codable
 ~~~~~~~~~~~
 Cannot be code in BEL
 
-Reverted subject/object
+Reversed subject/object
 ~~~~~~~~~~~~~~~~~~~~~~~
 Subject and object are flipped in the statement.
 

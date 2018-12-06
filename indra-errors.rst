@@ -54,3 +54,13 @@ The entity was labelled with the wrong modification site.
 Physical Contact Missing
 ~~~~~~~~~~~~~~~~~~~~~~~~
 The relationship was labelled as directed but the evidence does not show that.
+
+Not codable
+~~~~~~~~~~~
+Cannot be code in BEL
+
+Reverted subject/object
+~~~~~~~~~~~~~~~~~~~~~~~
+Subject and object are flipped in the statement.
+
+

@@ -3,6 +3,12 @@ Curation using INDRA
 This document describes a procedure for using `INDRA <https://github.com/sorgerlab/indra>`_
 for acquiring automatically extracted relations in BEL for curation.
 
+Code supporting this workflow can be found at https://github.com/bel-enrichment
+and the accompanying manuscript can be cited as [1]_:
+
+.. [1] Hoyt, C. T., *et al* (2019). `Re-curation and Rational Enrichment of Knowledge Graphs in
+       Biological Expression Language <https://doi.org/10.1101/536409>`_. *bioRxiv*, 536409.
+
 1. Identification of target entities
 ------------------------------------
 Curation begins from a seed list of entities. Often, this will be genes of interest

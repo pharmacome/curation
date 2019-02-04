@@ -5,6 +5,12 @@ NeuroMMSig subgraphs in the Alzheimer's Disease Knowledge Assembly during
 the Human Brain Pharmacome project, but may be generally applicable to
 other BEL scripts as well.
 
+Code supporting this workflow can be found at https://github.com/pybel/pybel-git
+and the accompanying manuscript can be cited as [1]_:
+
+.. [1] Hoyt, C. T., *et al* (2019). `Re-curation and Rational Enrichment of Knowledge Graphs in
+       Biological Expression Language <https://doi.org/10.1101/536409>`_. *bioRxiv*, 536409.
+
 Normalizing Entities
 --------------------
 Chemicals

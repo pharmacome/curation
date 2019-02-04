@@ -1,7 +1,11 @@
 Rational Enrichment
 ===================
 This document describes an approach to enrich knowledge assemblies
-based on topological novelty.
+based on topological novelty. Code supporting this workflow can be found at https://github.com/bel-enrichment
+and the accompanying manuscript can be cited as [1]_:
+
+.. [1] Hoyt, C. T., *et al* (2019). `Re-curation and Rational Enrichment of Knowledge Graphs in
+       Biological Expression Language <https://doi.org/10.1101/536409>`_. *bioRxiv*, 536409.
 
 1. Assemble BEL from Relevant Sources
 -------------------------------------
